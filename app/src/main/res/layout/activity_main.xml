@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:backgroundTint="@color/white"
+    android:background="@color/white">
+
+    <!-- TextView to enter task name -->
+    <EditText
+        android:id="@+id/etTaskName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Task Name"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColorHint="@color/black"
+        android:background="@android:drawable/editbox_background"
+        android:textSize="16sp" />
+
+    <!-- Button to add task -->
+    <Button
+        android:id="@+id/btnAddTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task"
+        android:backgroundTint="@color/SlateBlue"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView to display task list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"/>
+</LinearLayout>
